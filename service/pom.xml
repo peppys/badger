@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.peppysisay</groupId>
-	<artifactId>json-rules-engine</artifactId>
+	<artifactId>badger</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>json-rules-engine</name>
-	<description>JSON Rules Engine</description>
+	<name>badger</name>
+	<description>Dynamically generate badges.</description>
 
 	<properties>
 		<java.version>1.8</java.version>
