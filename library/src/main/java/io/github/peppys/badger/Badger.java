@@ -10,5 +10,7 @@ class Badger {
                 .build();
 
         System.out.println(badge.toString());
+
+        System.out.println("SVG: " + badge.getRawSVG());
     }
 }

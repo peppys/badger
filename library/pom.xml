@@ -12,6 +12,7 @@
         <java.version>1.8</java.version>
         <auto-value.version>1.7.4</auto-value.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+        <google-guava.version>29.0-jre</google-guava.version>
     </properties>
 
     <dependencies>
@@ -19,6 +20,12 @@
             <groupId>com.google.auto.value</groupId>
             <artifactId>auto-value-annotations</artifactId>
             <version>${auto-value.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${google-guava.version}</version>
         </dependency>
     </dependencies>
 
