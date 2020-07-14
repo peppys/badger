@@ -1,2 +1,2 @@
-dev:
-	    ./mvnw spring-boot:run
+compile:
+	    ./mvnw compile exec:java -Dexec.mainClass="io.github.peppys.badger.Badger"
