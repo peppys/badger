@@ -17,8 +17,8 @@ RUN ./mvnw install -DskipTests
 # Step 2: Use build to containerize jar file
 FROM openjdk:8-jdk-alpine
 
-COPY --from=build /opt/app/target/badger-0.0.1-SNAPSHOT.jar /opt/app/badger-0.0.1-SNAPSHOT.jar
+COPY --from=build /opt/app/target/badger-service-0.0.1-SNAPSHOT.jar /opt/app/badger-service-0.0.1-SNAPSHOT.jar
 
 EXPOSE 8080
 
-ENTRYPOINT ["java","-jar","/opt/app/badger-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","/opt/app/badger-service-0.0.1-SNAPSHOT.jar"]
