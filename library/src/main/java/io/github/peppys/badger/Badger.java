@@ -2,15 +2,17 @@ package io.github.peppys.badger;
 
 class Badger {
     public static void main(String[] args) {
-        Badge badge = Badge.builder()
-                .setLabelColor("black")
-                .setLabelText("label")
-                .setMessageColor("black")
-                .setMessageText("ok")
-                .build();
+        try {
+            Badge badge = Badge.builder()
+                    .setLabelColor("green")
+                    .setLabelText("Commits")
+                    .setMessageColor("black")
+                    .setMessageText("100/hr")
+                    .build();
 
-        System.out.println(badge.toString());
-
-        System.out.println("SVG: " + badge.getRawSVG());
+            System.out.println(badge.render());
+        } catch (Exception err) {
+            System.out.println("Found error" + err.toString());
+        }
     }
 }
