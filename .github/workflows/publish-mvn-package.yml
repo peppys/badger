@@ -12,7 +12,9 @@ jobs:
           java-version: 1.8
       - name: Checkout library
         run: cd library
+      - name: List contents
+        run: ls
       - name: Publish package
-        run: ./mvnw -B deploy
+        run: mvn -B deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
