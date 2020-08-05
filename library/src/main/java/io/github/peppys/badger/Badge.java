@@ -43,13 +43,13 @@ public abstract class Badge {
         }};
     }
 
-    public abstract String labelText();
+    abstract String labelText();
 
-    public abstract String labelColor();
+    abstract String labelColor();
 
-    public abstract String messageText();
+    abstract String messageText();
 
-    public abstract String messageColor();
+    abstract String messageColor();
 
     static Builder builder() {
         return new AutoValue_Badge.Builder();
@@ -57,17 +57,17 @@ public abstract class Badge {
 
     @AutoValue.Builder
     abstract static class Builder {
-        abstract Builder setLabelText(String value);
+        public abstract Builder setLabelText(String value);
 
-        abstract Builder setLabelColor(String value);
+        public abstract Builder setLabelColor(String value);
 
-        abstract Builder setMessageText(String value);
+        public abstract Builder setMessageText(String value);
 
-        abstract Builder setMessageColor(String value);
+        public abstract Builder setMessageColor(String value);
 
-        abstract Badge autoBuild();
+        public abstract Badge autoBuild();
 
-        Badge build() {
+        public Badge build() {
             Badge badge = autoBuild();
 
             Preconditions.checkState(!Strings.isNullOrEmpty(badge.labelText()), "Label text cannot be empty");
