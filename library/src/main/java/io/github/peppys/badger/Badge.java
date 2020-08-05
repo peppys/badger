@@ -51,7 +51,7 @@ public abstract class Badge {
 
     abstract String messageColor();
 
-    static Builder builder() {
+    public static Builder builder() {
         return new AutoValue_Badge.Builder();
     }
 
