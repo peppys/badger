@@ -1,7 +1,6 @@
 name: Compile and publish MVN package
 
-on: 
-  workflow_dispatch
+on: workflow_dispatch
 
   jobs:
     print_stuff:
