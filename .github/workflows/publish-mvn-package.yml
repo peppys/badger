@@ -10,11 +10,9 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - name: Checkout library
-        run: cd library
-      - name: List contents
-        run: ls
       - name: Publish package
-        run: mvn -B deploy
+        run: |
+          cd library
+          ./mvnw -B deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
