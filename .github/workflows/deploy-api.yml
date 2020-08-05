@@ -1,4 +1,4 @@
-name: Compile and publish MVN package
+name: Build and deploy badger API
 
 on: workflow_dispatch
 
@@ -9,7 +9,7 @@ env:
   CLOUD_RUN_SERVICE: ${{ secrets.CLOUD_RUN_SERVICE }}
   GITHUB_SHA: ${{ github.sha }}
   IMAGE: ${{ secrets.IMAGE }}
-  REGISTRY_HOSTNAME: ${{ secrets.IMREGISTRY_HOSTNAMEAGE }}
+  REGISTRY_HOSTNAME: ${{ secrets.REGISTRY_HOSTNAME }}
 
 jobs:
   setup-build-publish-deploy:
