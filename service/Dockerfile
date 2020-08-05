@@ -8,6 +8,15 @@ COPY .mvn .mvn
 COPY pom.xml .
 COPY src src
 
+ARG GITHUB_USER
+ARG GITHUB_TOKEN
+
+ENV GITHUB_USER=$GITHUB_USER
+ENV GITHUB_TOKEN=$GITHUB_TOKEN
+
+# Copy maven settings to docker file, with github auth
+COPY docker-config/settings.xml /root/.m2/settings.xml
+
 # Unsets maven config from base image, allowing us to use ./mvnw
 ENV MAVEN_CONFIG=""
 

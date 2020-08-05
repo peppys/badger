@@ -1,0 +1,11 @@
+version: '3'
+services:
+  api:
+    build:
+      context: .
+      args:
+        - GITHUB_USER=$GITHUB_USER
+        - GITHUB_TOKEN=$GITHUB_TOKEN
+
+    ports:
+      - '8080:8080'
