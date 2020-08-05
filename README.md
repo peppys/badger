@@ -47,6 +47,8 @@ $ mvn install
 
 #### Usage
 ```java
+import io.github.peppys.badger.Badge;
+
 Badge badge = Badge.builder()
         .setLabelText("build")
         .setLabelColor("black")
@@ -77,5 +79,4 @@ Host: https://badger-oxm27jqbha-uc.a.run.app
 
 Example query string: `?label_text=build&label_color=black&message_text=passing&message_color=green`
 
-Badge:
-![](https://badger-oxm27jqbha-uc.a.run.app/badge.svg?label_text=build&label_color=black&message_text=passing&message_color=green)
+Badge: <img src="https://badger-oxm27jqbha-uc.a.run.app/badge.svg?label_text=build&label_color=black&message_text=passing&message_color=green" />
