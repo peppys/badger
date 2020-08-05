@@ -56,7 +56,7 @@ public abstract class Badge {
     }
 
     @AutoValue.Builder
-    abstract static class Builder {
+    public abstract static class Builder {
         public abstract Builder setLabelText(String value);
 
         public abstract Builder setLabelColor(String value);
