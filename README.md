@@ -75,8 +75,10 @@ $ curl -X GET "http://localhost:8080/badge.svg?label_text=build&label_color=blac
 
 # Demo
 
-Host: https://badger-oxm27jqbha-uc.a.run.app
+Endpoint: https://badger-oxm27jqbha-uc.a.run.app/badge.svg
 
 Example query string: `?label_text=build&label_color=black&message_text=passing&message_color=green`
 
-Badge: <img src="https://badger-oxm27jqbha-uc.a.run.app/badge.svg?label_text=build&label_color=black&message_text=passing&message_color=green" />
+Demo URL: `https://badger-oxm27jqbha-uc.a.run.app/badge.svg?label_text=build&label_color=black&message_text=passing&message_color=green`
+
+Demo badge: <img src="https://badger-oxm27jqbha-uc.a.run.app/badge.svg?label_text=build&label_color=black&message_text=passing&message_color=green" />
