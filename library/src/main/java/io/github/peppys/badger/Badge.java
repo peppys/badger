@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @AutoValue
-abstract class Badge {
+public abstract class Badge {
     private static final PDFont FONT_FACE = PDMMType1Font.HELVETICA_BOLD;
     private static final int FONT_SIZE = 12;
 
