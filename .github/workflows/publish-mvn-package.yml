@@ -3,8 +3,16 @@ name: Compile and publish MVN package
 on: workflow_dispatch
 
 jobs:
-  print_stuff:
+  publish:
     runs-on: ubuntu-latest
     steps:
-    - run: |
-        echo "We got this far..." 
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+      - name: Checkout library
+        run: cd library
+      - name: Publish package
+        run: ./mvnw -B deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
