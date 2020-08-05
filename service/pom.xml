@@ -6,13 +6,21 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.3.1.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 	<groupId>com.peppysisay</groupId>
 	<artifactId>badger-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>badger-service</name>
 	<description>API dynamically generates badges.</description>
+
+	<repositories>
+		<repository>
+			<id>github</id>
+			<name>GitHub peppys packages</name>
+			<url>https://maven.pkg.github.com/peppys/badger</url>
+		</repository>
+	</repositories>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -22,6 +30,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>io.github.peppys</groupId>
+			<artifactId>badger</artifactId>
+			<version>0.0.5</version>
 		</dependency>
 
 		<dependency>
