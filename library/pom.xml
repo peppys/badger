@@ -12,7 +12,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://github.com/peppys/badger/tree/master/library</url>
+            <url>https://github.com/peppys/badger</url>
         </repository>
     </distributionManagement>
 
