@@ -10,7 +10,7 @@ env:
   GITHUB_SHA: ${{ github.sha }}
   IMAGE: ${{ secrets.IMAGE }}
   REGISTRY_HOSTNAME: ${{ secrets.REGISTRY_HOSTNAME }}
-  GITHUB_USER: ${{ secrets.GITHUB_USER }}
+  GITHUB_USER: ${{ secrets.USER }}
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
