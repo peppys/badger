@@ -1,4 +1,4 @@
-# badger
+# badger <img src="https://badger-oxm27jqbha-uc.a.run.app/badge.svg?label_text=author&label_color=black&message_text=peppy&message_color=green" /> <img src="https://badger-oxm27jqbha-uc.a.run.app/badge.svg?label_text=side projects&label_color=brown&message_text=are fun&message_color=blue" />
 
 Heavily inspired by:
 - https://github.com/badges/shields
