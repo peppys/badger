@@ -77,6 +77,6 @@ $ curl -X GET "http://localhost:8080/badge.svg?label_text=build&label_color=blac
 
 # Demo
 
-Demo URL: [https://badger-oxm27jqbha-uc.a.run.app/badge.svg?label_text=build&label_color=black&message_text=passing&message_color=green](https://badger-oxm27jqbha-uc.a.run.app/badge.svg?label_text=build&label_color=black&message_text=passing&message_color=green)
+Demo URL: [https://badger-oxm27jqbha-uc.a.run.app/badge.svg?label_text=demo&label_color=black&message_text=hello%20world&message_color=green](https://badger-oxm27jqbha-uc.a.run.app/badge.svg?label_text=demo&label_color=black&message_text=hello%20world&message_color=green)
 
-Demo Badge: <img src="https://badger-oxm27jqbha-uc.a.run.app/badge.svg?label_text=build&label_color=black&message_text=passing&message_color=green" />
+Demo Badge: <img src="https://badger-oxm27jqbha-uc.a.run.app/badge.svg?label_text=demo&label_color=black&message_text=hello%20world&message_color=green" />
