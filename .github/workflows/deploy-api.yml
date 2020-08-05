@@ -10,6 +10,8 @@ env:
   GITHUB_SHA: ${{ github.sha }}
   IMAGE: ${{ secrets.IMAGE }}
   REGISTRY_HOSTNAME: ${{ secrets.REGISTRY_HOSTNAME }}
+  GITHUB_USER: ${{ secrets.GITHUB_USER }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   setup-build-publish-deploy:
@@ -35,9 +37,6 @@ jobs:
 
       # Build the Docker image
       - name: Build
-        with:
-          GITHUB_USER: ${{ secrets.GITHUB_USER }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           docker build -t "$REGISTRY_HOSTNAME/$GOOGLE_PROJECT/$IMAGE:$GITHUB_SHA" \
             -t "$REGISTRY_HOSTNAME/$GOOGLE_PROJECT/$IMAGE:latest" \
