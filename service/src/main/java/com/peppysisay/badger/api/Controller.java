@@ -10,7 +10,7 @@ import io.github.peppys.badger.Badge;
 @RestController
 @RequestMapping("/")
 public class Controller {
-    @GetMapping("/")
+    @GetMapping("/badge.svg")
     public String render(@RequestParam String label_text,
                          @RequestParam String label_color,
                          @RequestParam String message_text,
