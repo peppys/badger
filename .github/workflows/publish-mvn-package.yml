@@ -2,9 +2,9 @@ name: Compile and publish MVN package
 
 on: workflow_dispatch
 
-  jobs:
-    print_stuff:
-      runs-on: ubuntu-latest
-      steps:
-      - run: |
-          echo "We got this far..." 
+jobs:
+  print_stuff:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo "We got this far..." 
