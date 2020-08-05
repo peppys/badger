@@ -1,10 +1,10 @@
-package com.peppysisay.jsonrulesengine;
+package com.peppysisay.badger;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class JsonRulesEngineApplicationTests {
+class BadgerApplicationTests {
 
 	@Test
 	void contextLoads() {
